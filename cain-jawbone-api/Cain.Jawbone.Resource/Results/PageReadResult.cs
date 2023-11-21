@@ -2,7 +2,7 @@
 
 namespace cain_jawbone_resources.Results
 {
-    public class PageReadResult : AbstractCommandResult
+    public class PageReadResult : AbstractCommandResult<Page>
     {
         public PageReadResult() : base() { }
         public PageReadResult(string message) : base(message) { }

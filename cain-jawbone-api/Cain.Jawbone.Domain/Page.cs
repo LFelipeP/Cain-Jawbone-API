@@ -4,7 +4,8 @@
     {
         public int PageNumber { get; set; }
         public string? Title { get; set; }
-        public IList<string>? Characters { get; set; }
-        public IList<string>? Tags { get; set; }
+        public List<string>? Characters { get; set; }
+        public List<string>? Tags { get; set; }
+        public int Order { get; set; }
     }
 }

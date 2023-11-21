@@ -2,6 +2,7 @@
 using cain_jawbone_resources.Inputs;
 using cain_jawbone_resources.Results;
 using MediatR;
+using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Logging;
 
 namespace cain_jawbone_resources.Handlers
@@ -11,9 +12,10 @@ namespace cain_jawbone_resources.Handlers
         private readonly IPageRepository _repository;
         private readonly ILogger<PageReadHandler> _logger;
 
-        public PageReadHandler(IPageRepository repository)
+        public PageReadHandler(IPageRepository repository, ILogger<PageReadHandler> logger)
         {
             _repository = repository;
+            _logger = logger;
         }
 
         public async Task<PageReadResult> Handle(PageReadCommand request, CancellationToken cancellationToken)
@@ -29,8 +31,12 @@ namespace cain_jawbone_resources.Handlers
 
                 return new PageReadResult(page);
 
+
+            }catch(CosmosException ex)
+            {
+                return new PageReadResult("Página não encontrada");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 _logger.LogError("Error reading page: {pageNumber}, Exception: {Message}", request.PageNumber, ex.Message);
 

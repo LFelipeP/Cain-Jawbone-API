@@ -1,7 +1,7 @@
 ﻿using cain_jawbone_resources.Inputs;
+using cain_jawbone_resources.Results;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace cain_jawbone_api.Controllers
 {
@@ -17,10 +17,7 @@ namespace cain_jawbone_api.Controllers
         }
 
         [HttpGet("byNumber/{pageNumber}")]
-        [ProducesResponseType(typeof(PageResult), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get([FromRoute] int pageNumber)
+        public async Task<ActionResult<PageReadResult>> Get([FromRoute] int pageNumber)
         {
             try
             {

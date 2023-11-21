@@ -1,13 +1,13 @@
 ﻿namespace cain_jawbone_resources.Results
 {
-    public abstract class AbstractCommandResult
+    public abstract class AbstractCommandResult<T> where T : class
     {
         public AbstractCommandResult() 
         {
             Success = true;
         }
 
-        public AbstractCommandResult(object data, bool success)
+        public AbstractCommandResult(T data, bool success)
         {
             Data = data;
             Success = true;
@@ -19,7 +19,7 @@
             Success = false;
         }
 
-        public object Data { get; }
+        public T Data { get; }
         public string Message { get; }
         public bool Success { get; }
     }
