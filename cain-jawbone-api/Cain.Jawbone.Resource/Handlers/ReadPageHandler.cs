@@ -7,18 +7,18 @@ using Microsoft.Extensions.Logging;
 
 namespace cain_jawbone_resources.Handlers
 {
-    public class PageReadHandler : IRequestHandler<PageReadCommand, PageReadResult>
+    public class ReadPageHandler : IRequestHandler<ReadPageCommand, PageResult>
     {
         private readonly IPageRepository _repository;
-        private readonly ILogger<PageReadHandler> _logger;
+        private readonly ILogger<ReadPageHandler> _logger;
 
-        public PageReadHandler(IPageRepository repository, ILogger<PageReadHandler> logger)
+        public ReadPageHandler(IPageRepository repository, ILogger<ReadPageHandler> logger)
         {
             _repository = repository;
             _logger = logger;
         }
 
-        public async Task<PageReadResult> Handle(PageReadCommand request, CancellationToken cancellationToken)
+        public async Task<PageResult> Handle(ReadPageCommand request, CancellationToken cancellationToken)
         {
             try
             {
@@ -27,20 +27,19 @@ namespace cain_jawbone_resources.Handlers
                 var page = queryResult.FirstOrDefault();
 
                 if (page == null)
-                    return new PageReadResult("Página não encontrada");
+                    return new PageResult("Página não encontrada");
 
-                return new PageReadResult(page);
-
-
-            }catch(CosmosException ex)
+                return new PageResult(page);
+            }
+            catch(CosmosException ex)
             {
-                return new PageReadResult("Página não encontrada");
+                return new PageResult("Página não encontrada");
             }
             catch (Exception ex)
             {
                 _logger.LogError("Error reading page: {pageNumber}, Exception: {Message}", request.PageNumber, ex.Message);
 
-                return new PageReadResult("Erro ao buscar página, tente novamente mais tarde");
+                return new PageResult("Erro ao buscar página, tente novamente mais tarde");
             }
         }
     }

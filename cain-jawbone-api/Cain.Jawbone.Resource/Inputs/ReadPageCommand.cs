@@ -4,9 +4,9 @@ using MediatR;
 
 namespace cain_jawbone_resources.Inputs
 {
-    public class PageReadCommand : IRequest<PageReadResult>
+    public class ReadPageCommand : IRequest<PageResult>
     {
-        public PageReadCommand(int pageNumber) 
+        public ReadPageCommand(int pageNumber) 
         { 
             PageNumber = pageNumber;
         }        
