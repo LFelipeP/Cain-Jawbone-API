@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/cain-jawbone-api/Cain.Jawbone.Api/appsettings.Development.json
