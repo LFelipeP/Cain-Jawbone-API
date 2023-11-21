@@ -22,7 +22,7 @@ namespace cain_jawbone_resources.Handlers
         {
             try
             {
-                var verifyPageNumber = _repository.FindAsync(x => x.PageNumber == request.Content.PageNumber).Any();
+                var verifyPageNumber = _repository.FindAsync(x => x.PageNumber == request.Content.PageNumber).ToList().Any();
 
                 if(verifyPageNumber)
                     return new PageResult($"A Página número {request.Content.PageNumber} já foi cadastrada");
