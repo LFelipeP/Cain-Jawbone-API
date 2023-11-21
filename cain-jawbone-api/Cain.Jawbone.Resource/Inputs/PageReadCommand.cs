@@ -1,4 +1,4 @@
-﻿using cain_jawbone_domains;
+﻿using Cain.Jawbone.Domain;
 using cain_jawbone_resources.Results;
 using MediatR;
 

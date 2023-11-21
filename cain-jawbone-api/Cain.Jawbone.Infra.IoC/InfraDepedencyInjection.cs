@@ -4,7 +4,7 @@ using System.Reflection;
 using MediatR;
 using Microsoft.Azure.Cosmos;
 using Cain.Jawbone.Infra.Data.Repositories;
-using cain_jawbone_domains.Interfaces;
+using Cain.Jawbone.Domain.Interfaces;
 
 namespace Cain.Jawbone.Infra.IoC
 {

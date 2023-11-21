@@ -1,4 +1,4 @@
-﻿using cain_jawbone_domains.Interfaces;
+﻿using Cain.Jawbone.Domain.Interfaces;
 using cain_jawbone_resources.Inputs;
 using cain_jawbone_resources.Results;
 using MediatR;

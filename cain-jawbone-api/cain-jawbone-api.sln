@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Api", "cain-jawbone-api\Cain.Jawbone.Api.csproj", "{41016E4A-6E12-4201-B360-6EF2013AD2C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Api", "Cain.Jawbone.Api\Cain.Jawbone.Api.csproj", "{41016E4A-6E12-4201-B360-6EF2013AD2C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Application", "cain-jawbone-resources\Cain.Jawbone.Application.csproj", "{C3B912F5-31A6-471B-B8F0-CB6D22C49157}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Application", "Cain.Jawbone.Resource\Cain.Jawbone.Application.csproj", "{C3B912F5-31A6-471B-B8F0-CB6D22C49157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Domain", "cain-jawbone-domains\Cain.Jawbone.Domain.csproj", "{9F482CA4-4D0E-4BCD-B237-C04EA3CB31FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Domain", "Cain.Jawbone.Domain\Cain.Jawbone.Domain.csproj", "{9F482CA4-4D0E-4BCD-B237-C04EA3CB31FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cain.Jawbone.Infra.IoC", "Cain.Jawbone.Infra.IoC\Cain.Jawbone.Infra.IoC.csproj", "{D237BAEC-D3C0-45AC-B78A-CF114655ACAC}"
 EndProject

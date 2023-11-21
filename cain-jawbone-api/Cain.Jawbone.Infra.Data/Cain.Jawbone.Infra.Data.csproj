@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\cain-jawbone-domains\Cain.Jawbone.Domain.csproj" />
+    <ProjectReference Include="..\Cain.Jawbone.Domain\Cain.Jawbone.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

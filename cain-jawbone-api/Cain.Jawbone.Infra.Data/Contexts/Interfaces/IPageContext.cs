@@ -1,4 +1,4 @@
-﻿using cain_jawbone_domains;
+﻿using Cain.Jawbone.Domain;
 
 namespace Cain.Jawbone.Infra.Data.Contexts.Interfaces
 {

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>cain_jawbone_resources</RootNamespace>
+    <RootNamespace>Cain.Jawbone.Resource</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\cain-jawbone-domains\Cain.Jawbone.Domain.csproj" />
+    <ProjectReference Include="..\Cain.Jawbone.Domain\Cain.Jawbone.Domain.csproj" />
   </ItemGroup>
 
 </Project>

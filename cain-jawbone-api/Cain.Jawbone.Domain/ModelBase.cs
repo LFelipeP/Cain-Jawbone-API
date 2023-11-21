@@ -1,4 +1,4 @@
-﻿namespace cain_jawbone_domains
+﻿namespace Cain.Jawbone.Domain
 {
     public abstract class ModelBase
     {

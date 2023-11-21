@@ -1,6 +1,6 @@
-﻿namespace cain_jawbone_domains.Interfaces
+﻿namespace Cain.Jawbone.Domain.Interfaces
 {
     public interface IPageRepository : IRepository<Page>
-    {
+    {   
     }
 }

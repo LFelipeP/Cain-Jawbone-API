@@ -1,6 +1,6 @@
 ﻿using Cain.Jawbone.Infra.Data.Contexts.Interfaces;
-using cain_jawbone_domains;
-using cain_jawbone_domains.Interfaces;
+using Cain.Jawbone.Domain;
+using Cain.Jawbone.Domain.Interfaces;
 using System.Linq.Expressions;
 
 namespace Cain.Jawbone.Infra.Data.Repositories

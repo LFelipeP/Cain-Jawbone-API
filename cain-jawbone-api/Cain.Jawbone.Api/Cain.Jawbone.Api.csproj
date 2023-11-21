@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>cain_jawbone_api</RootNamespace>
+    <RootNamespace>Cain.Jawbone.Api</RootNamespace>
     <UserSecretsId>a718c6b6-5369-4faa-a4ec-a7f01cabb0eb</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\cain-jawbone-resources\Cain.Jawbone.Application.csproj" />
+    <ProjectReference Include="..\Cain.Jawbone.Resource\Cain.Jawbone.Application.csproj" />
     <ProjectReference Include="..\Cain.Jawbone.Infra.IoC\Cain.Jawbone.Infra.IoC.csproj" />
   </ItemGroup>
 

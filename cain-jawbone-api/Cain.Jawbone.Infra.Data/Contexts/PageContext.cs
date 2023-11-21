@@ -1,5 +1,5 @@
 ﻿using Cain.Jawbone.Infra.Data.Contexts.Interfaces;
-using cain_jawbone_domains;
+using Cain.Jawbone.Domain;
 using Microsoft.Azure.Cosmos;
 
 namespace Cain.Jawbone.Infra.Data.Contexts
