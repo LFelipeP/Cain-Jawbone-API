@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>cain_jawbone_api</RootNamespace>
+    <UserSecretsId>a718c6b6-5369-4faa-a4ec-a7f01cabb0eb</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cain-jawbone-resources\Cain.Jawbone.Application.csproj" />
+    <ProjectReference Include="..\Cain.Jawbone.Infra.IoC\Cain.Jawbone.Infra.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
