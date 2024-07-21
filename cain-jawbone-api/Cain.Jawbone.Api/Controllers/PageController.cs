@@ -3,10 +3,12 @@ using Cain.Jawbone.Resource.Models;
 using cain_jawbone_resources.Inputs;
 using cain_jawbone_resources.Results;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace cain_jawbone_api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/page")]
     public class PageController : ControllerBase

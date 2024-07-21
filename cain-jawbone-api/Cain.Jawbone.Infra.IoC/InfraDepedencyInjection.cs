@@ -14,6 +14,7 @@ namespace Cain.Jawbone.Infra.IoC
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+
             services.AddSingleton(new CosmosClient(configuration.GetConnectionString("CosmosDb")));
             services.AddTransient<IPageContext, PageContext>();
             services.AddSingleton<IPageRepository, PageRepository>();
